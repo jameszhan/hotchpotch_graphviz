@@ -20,7 +20,7 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 #### 属性列表
 
 | Name | Used By | Type | Default | Minimum | Notes |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: |
 | Damping  | G | double |  0.99 | 0.0 | neato only |
 | K  | GC | double |  0.3 | 0 | sfdp, fdp only |
 | URL | ENGC |   escString  |  &lt;none&gt; |  | svg, postscript, map only |
@@ -45,14 +45,14 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | dim | G | int |  2 | 2 | sfdp, fdp, neato only |
 | dimen | G | int |  2 | 2 | sfdp, fdp, neato only |
 | dir | E | dirType |  forward(directed)<br />none(undirected) |  |  |
-| diredgeconstraints | G | string<br>  bool |  false |  | neato only |
+| diredgeconstraints | G | string <br />  bool |  false |  | neato only |
 | distortion | N | double |  0.0 | -100.0 |  |
-| dpi  |  G | double |  96.0<br>0.0 |  | svg, bitmap output only |
+| dpi  |  G | double |  96.0 <br />0.0 |  | svg, bitmap output only |
 | edgeURL  |  E |   escString  |   "" |  | svg, map only |
 | edgehref  |  E |   escString  |   "" |  | svg, map only |
 | edgetarget  |  E |   escString  |   &lt;none&gt; |  | svg, map only |
 | edgetooltip  |  E |   escString  |   "" |  | svg, cmap only |
-| epsilon  |  G | double |  .0001 * # nodes(mode == KK)<br>.0001(mode == major) |  | neato only |
+| epsilon  |  G | double |  .0001 * # nodes(mode == KK)<br /> .0001(mode == major) |  | neato only |
 | esep  |  G |   addDouble/addPoint  |   +3 |  | not dot |
 | fillcolor  |  NEC |   color/colorList  |   lightgrey(nodes)<br />black(clusters) |  |  |
 | fixedsize  |  N |   bool/string |  false |  |  |
@@ -80,7 +80,7 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | imagepos  |  N | string |  "mc" |  |  |
 | imagescale  |  N |   bool/string |  false |  |  |
 | inputscale  |  G | double |  &lt;none&gt; |  | fdp, neato only |
-| label  |  ENGC |   lblString  |   "\N" (nodes)<br>"" (otherwise) |  |  |
+| label  |  ENGC |   lblString  |   "\N" (nodes) <br />"" (otherwise) |  |  |
 | labelURL  |  E |   escString  |   "" |  | svg, map only |
 | label_scheme  |  G | int |  0 | 0 | sfdp only |
 | labelangle  |  E | double |  -25.0 | -180.0 |  |
@@ -91,7 +91,7 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | labelfontsize  |  E | double |  14.0 | 1.0 |  |
 | labelhref  |  E |   escString  |   "" |  | svg, map only |
 | labeljust  |  GC | string |  "c" |  |  |
-| labelloc  |  NGC | string |  "t"(clusters)<br>"b"(root graphs)<br>"c"(nodes) |  |  |
+| labelloc  |  NGC | string |  "t"(clusters) <br />"b"(root graphs) <br />"c"(nodes) |  |  |
 | labeltarget  |  E |   escString  |   &lt;none&gt; |  | svg, map only |
 | labeltooltip  |  E |   escString  |   "" |  | svg, cmap only |
 | landscape  |  G |   bool  |   false |  |  |
@@ -101,7 +101,7 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | layerselect  |  G |   layerRange  |   "" |  |  |
 | layersep  |  G | string |  " :\t" |  |  |
 | layout  |  G | string |  "" |  |  |
-| len  |  E | double |  1.0(neato)<br>0.3(fdp) |  | fdp, neato only |
+| len  |  E | double |  1.0(neato) <br />0.3(fdp) |  | fdp, neato only |
 | levels  |  G | int |  MAXINT | 0.0 | sfdp only |
 | levelsgap  |  G | double |  0.0 |  | neato only |
 | lhead  |  E | string |  "" |  | dot only |
@@ -109,8 +109,8 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | lp  |  EGC |   point  |    |  | write only |
 | ltail  |  E | string |  "" |  | dot only |
 | lwidth  |  GC | double |   |  | write only |
-| margin  |  NCG | double<br>  point  |   &lt;device-dependent&gt; |  |  |
-| maxiter  |  G | int |  100 * # nodes(mode == KK)<br>200(mode == major)<br>600(fdp) |  | fdp, neato only |
+| margin  |  NCG | double <br />  point  |   &lt;device-dependent&gt; |  |  |
+| maxiter  |  G | int |  100 * # nodes(mode == KK) <br />200(mode == major) <br />600(fdp) |  | fdp, neato only |
 | mclimit  |  G | double |  1.0 |  | dot only |
 | mindist  |  G | double |  1.0 | 0.0 | circo only |
 | minlen  |  E | int |  1 | 0 | dot only |
@@ -120,51 +120,51 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | newrank  |  G |   bool  |   false |  | dot only |
 | nodesep  |  G | double |  0.25 | 0.02 |  |
 | nojustify  |  GCNE |   bool  |   false |  |  |
-| normalize  |  G | double<br>  bool  |   false |  | not dot |
+| normalize  |  G | double <br />  bool  |   false |  | not dot |
 | notranslate  |  G |   bool  |   false |  | neato only |
 | nslimit/nslimit1  |  G | double |   |  | dot only |
 | ordering  |  GN | string |  "" |  | dot only |
 | orientation  |  N | double |  0.0 | 360.0 |  |
 | orientation  |  G | string |  "" |  |  |
 | outputorder  |  G |   outputMode  |   breadthfirst |  |  |
-| overlap  |  G | string<br>  bool  |   true |  | not dot |
+| overlap  |  G | string <br />  bool  |   true |  | not dot |
 | overlap_scaling  |  G | double |  -4 | -1.0e10 | prism only |
 | overlap_shrink  |  G |   bool  |   true |  | prism only |
 | pack  |  G |   bool/int |  false |  |  |
 | packmode  |  G |   packMode  |   node |  |  |
-| pad  |  G | double<br>  point  |   0.0555 (4 points) |  |  |
-| page  |  G | double<br>  point  |    |  |  |
+| pad  |  G | double <br />  point  |   0.0555 (4 points) |  |  |
+| page  |  G | double <br />  point  |    |  |  |
 | pagedir  |  G |   pagedir  |   BL |  |  |
 | pencolor  |  C |   color  |   black |  |  |
 | penwidth  |  CNE | double |  1.0 | 0.0 |  |
-| peripheries  |  NC | int |  shape default(nodes)<br>1(clusters) | 0 |  |
+| peripheries  |  NC | int |  shape default(nodes) <br />1(clusters) | 0 |  |
 | pin  |  N |   bool  |   false |  | fdp, neato only |
 | pos  |  EN |   point/splineType  |    |  |  |
 | quadtree  |  G |   quadType/bool  |   normal |  | sfdp only |
 | quantum  |  G | double |  0.0 | 0.0 |  |
 | rank  |  S |   rankType  |    |  | dot only |
 | rankdir  |  G |   rankdir  |   TB |  | dot only |
-| ranksep  |  G | double<br>  doubleList  |   0.5(dot)<br>1.0(twopi) | 0.02 | twopi, dot only |
-| ratio  |  G | double<br>string |   |  |  |
+| ranksep  |  G | double <br />  doubleList  |   0.5(dot) <br />1.0(twopi) | 0.02 | twopi, dot only |
+| ratio  |  G | double <br />string |   |  |  |
 | rects  |  N |   rect  |    |  | write only |
 | regular  |  N |   bool  |   false |  |  |
 | remincross  |  G |   bool  |   true |  | dot only |
 | repulsiveforce  |  G | double |  1.0 | 0.0 | sfdp only |
-| resolution  |  G | double |  96.0<br>0.0 |  | svg, bitmap output only |
-| root  |  GN | string<br>  bool  |   &lt;none&gt;(graphs)<br>false(nodes) |  | circo, twopi only |
+| resolution  |  G | double |  96.0 <br />0.0 |  | svg, bitmap output only |
+| root  |  GN | string <br />  bool  |   &lt;none&gt;(graphs) <br />false(nodes) |  | circo, twopi only |
 | rotate  |  G | int |  0 |  |  |
 | rotation  |  G | double |  0 |  | sfdp only |
 | samehead  |  E | string |  "" |  | dot only |
 | sametail  |  E | string |  "" |  | dot only |
-| samplepoints  |  N | int |  8(output)<br>20(overlap and image maps) |  |  |
-| scale  |  G | double<br>  point  |    |  | not dot |
+| samplepoints  |  N | int |  8(output) <br />20(overlap and image maps) |  |  |
+| scale  |  G | double <br />  point  |    |  | not dot |
 | searchsize  |  G | int |  30 |  | dot only |
 | sep  |  G |   addDouble/addPoint  |   +4 |  | not dot |
 | shape  |  N |   shape  |   ellipse |  |  |
 | shapefile  |  N | string |  "" |  |  |
 | showboxes  |  ENG | int |  0 | 0 | dot only |
 | sides  |  N | int |  4 | 0 |  |
-| size  |  G | double<br>  point  |    |  |  |
+| size  |  G | double <br />  point  |    |  |  |
 | skew  |  N | double |  0.0 | -100.0 |  |
 | smoothing  |  G |   smoothType  |   "none" |  | sfdp only |
 | sortv  |  GCN | int |  0 | 0 |  |
@@ -186,13 +186,12 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | vertices | N | pointList |   |  | write only |
 | viewport | G | viewPort |  "" |  |  |
 | voro_margin | G | double |  0.05 | 0.0 | not dot |
-| weight | E | int<br>double |  1 | 0(dot,twopi)<br>1(neato,fdp) |  |
+| weight | E | int <br />double |  1 | 0(dot,twopi)<br />1(neato,fdp) |  |
 | width | N | double |  0.75 | 0.01 |  |
 | xdotversion | G | string |   |  | xdot only |
 | xlabel | EN |   lblString |  "" |  |  |
 | xlp | NE |   point |   |  | write only |
-| z | N | double |  0.0 | -MAXFLOAT<br>-1000 |  |
-
+| z | N | double |  0.0 | -MAXFLOAT<br />-1000 |  |
 
 
 #### 箭头样式
