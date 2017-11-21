@@ -41,7 +41,7 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | concentrate | G |   bool |  false |  |  |
 | constraint  | E |   bool |  true |  | dot only |
 | decorate  | E |   bool |  false |  |  |
-| defaultdist | G | double |  1+(avg. len)*sqrt(|V|) | epsilon | neato only |
+| defaultdist | G | double |  1+(avg. len)*sqrt(\|V\|) | epsilon | neato only |
 | dim | G | int |  2 | 2 | sfdp, fdp, neato only |
 | dimen | G | int |  2 | 2 | sfdp, fdp, neato only |
 | dir | E | dirType |  forward(directed)<br />none(undirected) |  |  |
