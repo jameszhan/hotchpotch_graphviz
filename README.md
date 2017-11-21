@@ -44,7 +44,7 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | defaultdist | G | double |  1+(avg. len)*sqrt(|V|) | epsilon | neato only |
 | dim | G | int |  2 | 2 | sfdp, fdp, neato only |
 | dimen | G | int |  2 | 2 | sfdp, fdp, neato only |
-| dir | E | dirType |  forward(directed)/none(undirected) |  |  |
+| dir | E | dirType |  forward(directed)<br />none(undirected) |  |  |
 | diredgeconstraints | G | string<br>  bool |  false |  | neato only |
 | distortion | N | double |  0.0 | -100.0 |  |
 | dpi  |  G | double |  96.0<br>0.0 |  | svg, bitmap output only |
@@ -54,7 +54,7 @@ compass_pt: (n | ne | e | se | s | sw | w | nw | c | _)
 | edgetooltip  |  E |   escString  |   "" |  | svg, cmap only |
 | epsilon  |  G | double |  .0001 * # nodes(mode == KK)<br>.0001(mode == major) |  | neato only |
 | esep  |  G |   addDouble/addPoint  |   +3 |  | not dot |
-| fillcolor  |  NEC |   color/colorList  |   lightgrey(nodes)<br>black(clusters) |  |  |
+| fillcolor  |  NEC |   color/colorList  |   lightgrey(nodes)<br />black(clusters) |  |  |
 | fixedsize  |  N |   bool/string |  false |  |  |
 | fontcolor  |  ENGC |   color  |   black |  |  |
 | fontname  |  ENGC | string |  "Times-Roman" |  |  |
