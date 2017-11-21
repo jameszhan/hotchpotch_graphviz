@@ -1,0 +1,10 @@
+digraph structs {
+    a -> b[arrowtail="box"];
+    a -> c[arrowtail="crow"];
+    a -> d[arrowtail="curve"];
+    a -> e[arrowtail="diamond"];
+    a -> f[arrowtail="dot"];
+    a -> g[arrowtail="icurve"];
+    a -> h[arrowtail="inv"];
+    a -> i[arrowtail="none"];
+}

@@ -1,4 +1,4 @@
-digraph {
+digraph hello {
     a[shape="record",style="filled",color="red",fillcolor="skyblue",fontname="Kai",fontsize=32];
     b;
     c;
