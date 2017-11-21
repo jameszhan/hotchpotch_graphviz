@@ -1,0 +1,9 @@
+digraph {
+    a[shape="record",style="filled",color="red",fillcolor="skyblue",fontname="Kai",fontsize=32];
+    b;
+    c;
+    d;
+    a -> b[label="ab",color="red",fontcolor="darkolivegreen",style="dashed"];
+    b -> d;
+    c -> d;
+}
