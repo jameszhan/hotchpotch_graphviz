@@ -1,0 +1,42 @@
+digraph ml {
+
+    subgraph math {
+        node[shape=record]
+        topic[label="机器学习入门需要哪些数学基础"];
+        q1[label="机器学习中涉及到的基本数学知识有哪些？"];
+        q2[label="微积分中必须掌握的内容有哪些？"];
+        q3[label="统计和概率论中必须掌握的内容有哪些？"];
+        q4[label="线性代数中必须掌握的内容有哪些？"];
+        q5[label="凸优化、运筹学、泛函等对机器学习的帮助有多大？"];
+        q6[label="如何快速利用免费资源弥补自己在数学上的短板？"];
+        q7[label="机器学习相关岗位面试中数学内容分享"];
+        q31[label="统计学"];
+        q32[label="概率论"];
+        q41[label="线性变换"];
+        q42[label="行列式"];
+        q43[label="逆矩阵"];
+        q44[label="基变换"];
+        q45[label="特征向量"];
+        q51[label="凸优化"];
+        q52[label="运筹学"];
+        q53[label="泛函"];
+        topic -> q1;
+        topic -> q2;
+        topic -> q3;
+        topic -> q4;
+        topic -> q5;
+        topic -> q6;
+        topic -> q7;
+        q3 -> q31;
+        q3 -> q32;
+        q4 -> q41;
+        q4 -> q42;
+        q4 -> q43;
+        q4 -> q44;
+        q4 -> q45;
+        q5 -> q51;
+        q5 -> q52;
+        q5 -> q53;
+    }
+
+}

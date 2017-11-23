@@ -1,0 +1,11 @@
+digraph Jekyll {
+    node [shape=record];
+    rankdir = "BT";
+
+    Plugin[label = "{<f0> Plugin|<f1> descendants}"];
+    Generator[label = "{<f0> Generator}"];
+    Converter;
+    Tag[label = "{<f0> Tag|<f1> descendants}"];
+    Generator -> Plugin[style="dashed"];
+    Converter -> Plugin[style="dashed"]
+}
