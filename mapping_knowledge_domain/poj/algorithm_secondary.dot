@@ -1,0 +1,194 @@
+digraph algorithm_secondary { // 校赛压轴及省赛中等难度
+    node[shape=record]
+    rankdir=LR
+
+    subgraph basic {
+        basic[label="基本算法"];
+        stl[label="C++的标准模版库的应用"];
+        stl -> poj3096;
+        stl -> poj3007;
+        simple_algo[label="较为复杂的模拟题的训练"];
+        simple_algo -> poj3393;
+        simple_algo -> poj1472;
+        simple_algo -> poj3371;
+        simple_algo -> poj1027;
+        simple_algo -> poj2706;
+
+        basic -> stl;
+        basic -> simple_algo;
+    }
+
+    subgraph graph_algorithm {
+        graph_algorithm[label="图算法"];
+        differential_constraint_system[label="差分约束系统的建立和求解"];
+        differential_constraint_system -> poj1201;
+        differential_constraint_system -> poj2983;
+        mcmf[label="最小费用最大流"];
+        mcmf -> poj2516;
+        mcmf -> poj2195;
+        biconnected_component[label="双连通分量"];
+        biconnected_component -> poj2942;
+        strongly_connected_components[label="强连通分支及其缩点"];
+        strongly_connected_components -> poj2186;
+        cut_edge_point[label="图的割边和割点"];
+        cut_edge_point -> poj3352;
+        network_flow[label="最小割模型、网络流规约"];
+        network_flow -> poj3308;
+
+        graph_algorithm -> differential_constraint_system;
+        graph_algorithm -> mcmf;
+        graph_algorithm -> biconnected_component;
+        graph_algorithm -> strongly_connected_components;
+        graph_algorithm -> cut_edge_point;
+        graph_algorithm -> network_flow;
+    }
+
+    subgraph data_structure {
+        data_structure[label="数据结构"];
+        segment_tree[label="线段树"];
+        segment_tree -> poj2528;
+        segment_tree -> poj2828;
+        segment_tree -> poj2777;
+        segment_tree -> poj2886;
+        segment_tree -> poj2750;
+        binary_search_tree[label="静态二叉检索树"];
+        binary_search_tree -> poj2482;
+        binary_search_tree -> poj2352;
+        tree_array[label="树状数组"];
+        tree_array -> poj1195;
+        tree_array -> poj3321;
+        RMQ -> poj3264;
+        RMQ -> poj3368;
+        union_find_set[label="并查集的高级应用"];
+        union_find_set -> poj1703;
+        union_find_set -> poj2492;
+        KMP -> poj2406;
+        KMP -> poj1961;
+
+        data_structure -> segment_tree;
+        data_structure -> binary_search_tree;
+        data_structure -> tree_array;
+        data_structure -> RMQ;
+        data_structure -> union_find_set;
+        data_structure -> KMP;
+    }
+
+    subgraph search {
+        search[label="搜索"];
+        prune[label="最优化剪枝和可行性剪枝"];
+        search_skills[label="搜索的技巧和优化"];
+        search_skills -> poj3411;
+        search_skills -> poj1724;
+        memorized_search[label="记忆化搜索"];
+        memorized_search -> poj3373;
+        memorized_search -> poj1691;
+
+        search -> prune;
+        search -> search_skills;
+        search -> memorized_search;
+    }
+
+    subgraph dynamic_programming {
+        dynamic_programming[label="动态规划"];
+        complex_dp[label="复杂的动态规划"];
+        complex_dp -> poj1191;
+        complex_dp -> poj1054;
+        complex_dp -> poj3280;
+        complex_dp -> poj2029;
+        complex_dp -> poj2948;
+        complex_dp -> poj1925;
+        complex_dp -> poj3034;
+        record_state_dp[label="记录状态的动态规划"];
+        record_state_dp -> poj3254;
+        record_state_dp -> poj2411;
+        record_state_dp -> poj1185;
+        tree_dp[label="树型动态规划"];
+        tree_dp -> poj2057;
+        tree_dp -> poj1947;
+        tree_dp -> poj2486;
+        tree_dp -> poj3140;
+
+        dynamic_programming -> complex_dp;
+        dynamic_programming -> record_state_dp;
+        dynamic_programming -> tree_dp;
+    }
+
+    subgraph maths {
+        maths[label="数学"];
+        combinatorial_mathematics[label="组合数学"];
+        combinatorial_mathematics -> 容斥原理;
+        combinatorial_mathematics -> 抽屉原理;
+        polya[label="置换群与Polya定理"];
+        polya -> poj1286;
+        polya -> poj2409;
+        polya -> poj3270;
+        polya -> poj1026;
+        combinatorial_mathematics -> polya;
+        combinatorial_mathematics -> 递推关系和母函数;
+        computational_method[label="计算方法"];
+        fractional_programmig[label="0/1分数规划"];
+        fractional_programmig -> poj2976;
+        computational_method -> fractional_programmig;
+        computational_method -> 三分法求解单峰谷的极值;
+        matrix[label="矩阵法"];
+        matrix -> poj3150;
+        matrix -> poj3422;
+        matrix -> poj3070;
+        computational_method -> matrix;
+        iterative_approximation[label="迭代逼近"];
+        iterative_approximation -> poj3301;
+        computational_method -> iterative_approximation;
+        randomized_algorithm[label="随机化算法"];
+        randomized_algorithm -> poj3318;
+        randomized_algorithm -> poj2454;
+        gaussian_elimination[label="高斯消元法"];
+        gaussian_elimination -> poj2947;
+        gaussian_elimination -> poj1487;
+        gaussian_elimination -> poj2065;
+        gaussian_elimination -> poj1166;
+        gaussian_elimination -> poj1222;
+        probability[label="概率问题"];
+        probability -> poj3071;
+        probability -> poj3440;
+
+        maths -> GCD、中国剩余定理 -> poj3101;
+        misc[label="杂题"];
+        misc -> poj1870;
+        misc -> poj3296;
+        misc -> poj3286;
+        misc -> poj1095;
+
+        maths -> combinatorial_mathematics;
+        maths -> computational_method;
+        maths -> randomized_algorithm;
+        maths -> gaussian_elimination;
+        maths -> probability;
+        maths -> misc;
+    }
+
+    subgraph computational_geometry {
+        computational_geometry[label="计算几何学"];
+        computational_geometry -> 坐标离散化;
+        scan_line_algorithm[label="扫描线算法"];
+        scan_line_algorithm -> poj1765;
+        scan_line_algorithm -> poj1177;
+        scan_line_algorithm -> poj1151;
+        scan_line_algorithm -> poj3277;
+        scan_line_algorithm -> poj2280;
+        scan_line_algorithm -> poj3004;
+        computational_geometry -> scan_line_algorithm;
+        polygon_kernel[label="多边形的内核"];
+        polygon_kernel -> poj3130;
+        polygon_kernel -> poj3335;
+        computational_geometry -> polygon_kernel;
+        synthesize_apply[label="几何工具的综合应用"];
+        synthesize_apply -> poj1819;
+        synthesize_apply -> poj1066;
+        synthesize_apply -> poj2043;
+        synthesize_apply -> poj3227;
+        synthesize_apply -> poj2165;
+        synthesize_apply -> poj3429;
+        computational_geometry -> synthesize_apply;
+    }
+
+}

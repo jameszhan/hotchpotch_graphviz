@@ -1,0 +1,159 @@
+digraph algorithm_senior { // regional中等难度
+    node[shape=record]
+    rankdir=LR
+
+    subgraph basic {
+        basic[label="基本算法"];
+
+        basic -> 代码快速写成;
+        basic -> 保证正确性和高效性;
+        basic_poj[label="习题"];
+        basic_poj -> poj2525;
+        basic_poj -> poj1684;
+        basic_poj -> poj1421;
+        basic_poj -> poj1048;
+        basic_poj -> poj2050;
+        basic_poj -> poj3306;
+        basic_poj -> poj3434;
+        basic -> basic_poj;
+    }
+
+    subgraph graph_algorithm {
+        graph_algorithm[label="图算法"];
+
+        graph_algorithm -> 度限制最小生成树和第K最短路 -> poj1639;
+        model_building[label="模型建立和求解"];
+        model_building -> 最短路;
+        model_building -> 最小生成树;
+        model_building -> 二分图;
+        model_building -> 最大流;
+        model_building_poj[label="习题"];
+        model_building_poj -> poj3155;
+        model_building_poj -> poj2112;
+        model_building_poj -> poj1966;
+        model_building_poj -> poj3281;
+        model_building_poj -> poj1087;
+        model_building_poj -> poj2289;
+        model_building_poj -> poj3216;
+        model_building_poj -> poj2446;
+        model_building -> model_building_poj;
+        graph_algorithm -> model_building;
+        model_building -> 最优比率生成树 -> poj2728;
+        model_building -> 最小树形图 -> poj3164;
+        model_building -> 次小生成树;
+        model_building -> 无向图、有向图的最小环;
+    }
+
+    subgraph data_structure {
+        data_structure[label="数据结构"];
+        data_structure -> trie图的建立和应用 -> poj2778;
+        data_structure -> LCA和RMQ问题 -> poj1330;
+        data_structure -> 双端队列和它的应用 -> poj2823;
+        data_structure -> 左偏树;
+        suffix_tree[label="后缀树"];
+        suffix_tree -> poj3415;
+        suffix_tree -> poj3294;
+        data_structure -> suffix_tree;
+    }
+
+    subgraph search {
+        search[label="搜索"];
+        search_misc[label="较麻烦的搜索题目训练"];
+        search_misc -> poj1069;
+        search_misc -> poj3322;
+        search_misc -> poj1475;
+        search_misc -> poj1924;
+        search_misc -> poj2049;
+        search_misc -> poj3426;
+        search_bfs[label="广搜的状态优化"];
+        search_bfs -> 利用M进制数存储状态;
+        search_bfs -> 转化为串用hash表判重;
+        search_bfs -> 按位压缩存储状态;
+        search_bfs -> 双向广搜;
+        astar[label="A*算法"];
+        search_bfs -> astar;
+        search_bfs_poj[label="习题"];
+        search_bfs_poj -> poj1768;
+        search_bfs_poj -> poj1184;
+        search_bfs_poj -> poj1872;
+        search_bfs_poj -> poj1324;
+        search_bfs_poj -> poj2046;
+        search_bfs_poj -> poj1482;
+        search_bfs -> search_bfs_poj;
+        search_dfs[label="深搜的优化"];
+        search_dfs -> 尽量用位运算;
+        search_dfs -> 一定要加剪枝;
+        search_dfs -> 函数参数尽可能少;
+        search_dfs -> 层数不易过大;
+        search_dfs -> 考虑双向搜索;
+        search_dfs -> 考虑轮换搜索;
+        idastar[label="IDA*算法"];
+        search_dfs -> idastar;
+        search_dfs_poj[label="习题"];
+        search_dfs_poj -> poj3131;
+        search_dfs_poj -> poj2870;
+        search_dfs_poj -> poj2286;
+        search_dfs -> search_dfs_poj;
+
+        search -> search_misc;
+        search -> search_bfs;
+        search -> search_dfs;
+    }
+
+    subgraph dynamic_programming {
+        dynamic_programming[label="动态规划"];
+        dp_optimize[label="需要用数据结构优化的动态规划"];
+        dp_optimize -> poj2754;
+        dp_optimize -> poj3378;
+        dp_optimize -> poj3017;
+
+        dynamic_programming -> dp_optimize;
+        dynamic_programming -> 四边形不等式理论;
+        dynamic_programming -> 较难的状态DP -> poj3133;
+    }
+
+    subgraph maths {
+        maths[label="数学"];
+
+        combinatorial_mathematics[label="组合数学"];
+        mobius[label="MoBius反演"];
+        mobius -> poj2154;
+        mobius -> poj2888;
+        combinatorial_mathematics -> mobius;
+        combinatorial_mathematics -> 偏序关系理论;
+        gt[label="博弈论"];
+        maximin[label="极大极小过程"];
+        maximin -> poj3317;
+        maximin -> poj1085;
+        gt -> maximin;
+        gt -> Nim问题;
+
+        maths -> combinatorial_mathematics;
+        maths -> gt;
+    }
+
+    subgraph computational_geometry {
+        computational_geometry[label="计算几何学"];
+        half_plane[label="半平面求交"];
+        half_plane -> poj3384;
+        half_plane -> poj2540;
+        computational_geometry -> half_plane;
+        computational_geometry -> 可视图的建立 -> poj2966;
+        computational_geometry -> 点集最小圆覆盖;
+        computational_geometry -> 对踵点 -> poj2079;
+    }
+
+    subgraph synthesize_apply {
+        synthesize_exercise[label="综合题"];
+        synthesize_exercise -> poj3109;
+        synthesize_exercise -> poj1478;
+        synthesize_exercise -> poj1462;
+        synthesize_exercise -> poj2729;
+        synthesize_exercise -> poj2048;
+        synthesize_exercise -> poj3336;
+        synthesize_exercise -> poj3315;
+        synthesize_exercise -> poj2148;
+        synthesize_exercise -> poj1263;
+    }
+
+}
