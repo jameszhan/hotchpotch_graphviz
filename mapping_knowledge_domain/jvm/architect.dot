@@ -1,0 +1,30 @@
+digraph JVM_Architect {
+    graph[label="JVM Internal Architect",labelloc=t,fontsize=10];
+    rankdir="LR";
+
+    node[shape="record",fontsize=11];
+
+    thread[label="Thread"];
+    pc[label="PC"];
+    stack[label="<f0>Stack|<f1>||",fontsize=10];
+    native_stack[label="Native Stack|||",fontsize=10];
+
+    thread -> pc[label="1..1",color="forestgreen"];
+    thread -> stack[label="1..1",color="forestgreen"];
+    thread -> native_stack[label="1..1",color="forestgreen"];
+
+    frame[label="Frame"];
+    stack:f1 -> frame[label="1..*",color="forestgreen"];
+
+    return_value[label="Return Value"];
+
+    locals[label="<f0>Local Variables|{<f1>|||}",fontsize=8];
+    operand_stack[label="<f0>Operand Stack|||",fontsize=10];
+    cp_ref[label="Current Class\nConstant Pool\nReference",fontsize=8];
+
+    frame -> return_value[label="1..1",color="forestgreen"];
+    frame -> locals:f1[label="1..1",color="forestgreen"];
+    frame -> operand_stack:f0[label="1..1",color="forestgreen"];
+    frame -> cp_ref[label="1..1",color="forestgreen"];
+}
+
